@@ -1,18 +1,81 @@
-/* GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.me-auto {
-    margin-left: 40%;
+.navbar {
+    position: fixed;
+    top: 0;
+}
+
+.container.banner {
+    height: 300px;
 }
 
 .appunto {
     width: 60%;
     margin: 0 auto;
+    padding: 5%;
 }
 .banner ul {
     list-style: none;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: gray;
+}
+
+.fi {
+    color: aliceblue;
+    font-size: larger;
+    margin-right: 10px;
+}
+
+.cards {
+    margin-bottom: 8%;
+}
+
+.card-text {
+    font-size: 1.1em;
+}
+
+.card.custom-card {
+    border: 3px solid rgba(128, 128, 128);
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgba(90, 197, 254, 0.5), rgba(115, 255, 173, 0.5));
+    position: relative;
+    overflow: hidden;
+}
+
+.card.custom-card .card-body {
+    background-color: transparent;
+}
+
+.footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: white;
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right, #5ac5fe, #73ffad);
+}
+
+.footer h4 {
+    margin: 20px;
+}
+
+.github-link {
+    font-size: 50px;
+    margin: 0 10px;
+    text-decoration: none;
 }
