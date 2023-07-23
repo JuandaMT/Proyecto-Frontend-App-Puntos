@@ -4,72 +4,145 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="media/logo.png" type="image/x-icon" />
+
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
             crossorigin="anonymous"
         />
-
-        <title>APPUNTO</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="media/logo.svg" alt="Logo" height="30" class="d-inline-block align-text-top" />
-                </a>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">USUARIOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">DUDAS</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Botones de Login y Sign-in -->
-                <div class="me-auto">
-                    <a href="#" class="btn text-white me-2"></a>
-                    <button type="button" class="btn btn-secondary">Sign-in</button>
-                </div>
-
-                <!-- Botón de hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
-
-        <div class="banner">
-            <ul>
-                <li class="appunto">
-                    <a href=""> <img src="media/appunto.svg" /> </a>
-                </li>
-            </ul>
-            <div class="frase">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id distinctio enim ea. Repellat dolore excepturi quisquam cupiditate magnam! Id animi quaerat placeat eveniet corporis quod
-                    quasi earum esse officiis impedit.
-                </p>
-            </div>
-        </div>
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css" />
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet" />
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"
         ></script>
+
+        <title>APPUNTO</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="media/logo.svg" height="35" alt="Logo" />
+                </a>
+
+                <button
+                    class="navbar-toggler navbar-toggler-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="usuarios.html">USUARIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="dudas.html">DUDAS</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="login" href="login.html"><i class="fi fi-ss-user"></i></a>
+            </div>
+        </nav>
+
+        <div class="container banner">
+            <div class="appunto">
+                <a href=""> <img src="media/appunto.svg" /> </a>
+                <h3 class="index-slogan">Pregunta, resuelve, appuntate!</h3>
+            </div>
+        </div>
+        <main>
+            <div class="cards">
+                <div class="container">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="media/1.jpg" alt="Descripción de la imagen" />
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">¿Qué es Appunto?</h4>
+                                    <p class="card-text">
+                                        Appunto es una API REST educativa, con un backend desarrollado en JavaScript, utilizando Express, Mongosh y Mongoose para una integración sólida con una base de
+                                        datos MongoDB. <br />
+                                        Emplea Bcrypt y JSON Web Token para garantizar la seguridad de los datos de los usuarios. Además, utiliza Nodemailer para confirmar correos electrónicos y
+                                        mejorar la seguridad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="media/2.jpg" alt="Descripción de la imagen" />
+
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">¿Para qué sirve?</h4>
+                                    <p class="card-text">
+                                        Appunto conecta profesores y alumnos para facilitar la resolución de dudas y fomentar el aprendizaje colaborativo. <br />
+                                        Los alumnos pueden unirse a la lista de espera para recibir asistencia y también ayudar a sus compañeros al responder preguntas. <br />
+                                        Los profesores obtienen métricas sobre el desempeño y la interacción de los alumnos, y pueden otorgar puntos positivos para fomentar la motivación.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="card custom-card h-100">
+                                <img src="media/3.jpg" alt="Descripción de la imagen" />
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">¿Cómo utilizar Appunto?</h4>
+                                    <p class="card-text">
+                                        Para utilizar Appunto, tanto profesores como alumnos deben registrarse en la plataforma. <br />
+                                        Los alumnos acceden a la lista de espera para plantear sus dudas. <br />
+                                        Cuando un alumno necesita ayuda, puede enviar una pregunta que será visible para el profesor y otros compañeros. <br />
+                                        Los alumnos también pueden ayudarse mutuamente al responder preguntas de otros compañeros.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <h4 class="text-center">Desarrollado por:</h4>
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <!-- Link Icon para GitHub 1 -->
+                        <p>JUANDA</p>
+                        <a href="https://github.com/JuandaMT" target="_blank" class="github-link">
+                            <i class="fi fi-brands-github"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <!-- Link Icon para GitHub 2 -->
+                        <p>PATRI</p>
+                        <a href="https://github.com/patrigarcia" target="_blank" class="github-link">
+                            <i class="fi fi-brands-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
-    <footer>
-        <ul>
-            <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i class="fab fa-github"></i></a>
-            <li>PATRI</li>
-            <li>JUANDA</li>
-        </ul>
-    </footer>
 </html>

@@ -1,18 +1,229 @@
-/* GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.me-auto {
-    margin-left: 40%;
+.navbar {
+    position: fixed;
+    top: 0;
+}
+
+.container.banner {
+    height: 300px;
 }
 
 .appunto {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.index-slogan {
+    font-size: 3em;
+    font-family: "Rancho", cursive;
+    color: #555;
 }
 .banner ul {
     list-style: none;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: gray;
+}
+
+.fi {
+    color: aliceblue;
+    font-size: larger;
+    margin-right: 10px;
+}
+
+.cards {
+    margin-bottom: 8%;
+}
+
+.card-text {
+    font-size: 1.1em;
+}
+
+.card.custom-card {
+    border: 3px solid rgba(128, 128, 128);
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgba(90, 197, 254, 0.5), rgba(115, 255, 173, 0.5));
+    position: relative;
+    overflow: hidden;
+}
+
+.card.custom-card .card-body {
+    background-color: transparent;
+}
+
+.footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: white;
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right, #5ac5fe, #73ffad);
+}
+
+.footer h4 {
+    margin: 20px;
+}
+
+.github-link {
+    font-size: 50px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/*------------------------------- USUARIOS -----------------------------------*/
+
+main div {
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.tarjetaUsuarios {
+    height: 400px;
+    width: 70%;
+    border-radius: 8px;
+    background-color: rgb(224, 224, 224);
+    border-bottom: 2px solid rgb(194, 194, 194);
+    border-right: 2px solid rgb(194, 194, 194);
+}
+
+/*------------------------------- DUDAS -------------------------------------*/
+
+/*------------------------------- LOGIN -------------------------------------*/
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-main,
+.register {
+    height: 100%;
+    padding-bottom: 10%;
+}
+
+.logo-slogan {
+    width: 30%;
+    font-size: 1.4em;
+    text-align: center;
+    font-family: "Rancho", cursive;
+}
+
+.slogan {
+    font-size: 1.1em;
+}
+
+.login-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20%;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-header h1 {
+    font-size: 1.3em;
+    color: #333;
+    text-shadow: 1px 1px #ddd;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+    font-size: 1.1em;
+    color: #555;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #5ac5fe, #73ffad);
+}
+
+.login-button {
+    background: linear-gradient(to right, #5ac5fe, #73ffad);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    transition: 0.25s;
+}
+
+.login-button:hover {
+    background-color: #0069d9e7;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 105, 217, 1);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 105, 217, 1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 105, 217, 1);
+}
+
+/*------------------------------- SIGN-UP -------------------------------------*/
+
+.register {
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo {
+    margin-bottom: 20px;
 }
