@@ -14,9 +14,16 @@
 }
 
 .appunto {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
-    padding: 5%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.index-slogan {
+    font-size: 3em;
+    font-family: "Rancho", cursive;
+    color: #555;
 }
 .banner ul {
     list-style: none;
@@ -103,8 +110,25 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5%;
 }
+
+.login-main,
+.register {
+    height: 100%;
+    padding-bottom: 10%;
+}
+
+.logo-slogan {
+    width: 30%;
+    font-size: 1.4em;
+    text-align: center;
+    font-family: "Rancho", cursive;
+}
+
+.slogan {
+    font-size: 1.1em;
+}
+
 .login-card {
     background-color: #f8f8f8;
     border-radius: 10px;
@@ -112,6 +136,7 @@ main {
     padding: 20px;
     max-width: 400px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20%;
 }
 
 .card-header {
@@ -120,7 +145,7 @@ main {
 }
 
 .card-header h1 {
-    font-size: 2em;
+    font-size: 1.3em;
     color: #333;
     text-shadow: 1px 1px #ddd;
 }
@@ -131,7 +156,7 @@ main {
 
 .form-group label {
     display: block;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #555;
     margin-bottom: 10px;
 }
@@ -144,7 +169,7 @@ input[type="password"] {
     border-radius: 5px;
     border: none;
     background-color: #f0f0f0;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #555;
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
@@ -163,17 +188,17 @@ input[type="submit"] {
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 10px;
     transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #0069d9;
+    background: linear-gradient(to right, #5ac5fe, #73ffad);
 }
 
 .login-button {
-    background-color: #007bff;
+    background: linear-gradient(to right, #5ac5fe, #73ffad);
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -192,4 +217,13 @@ input[type="submit"]:hover {
     box-shadow: 0px 0px 30px 0px rgba(0, 105, 217, 1);
 }
 
-/*------------------------------- LOGOUT -------------------------------------*/
+/*------------------------------- SIGN-UP -------------------------------------*/
+
+.register {
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}

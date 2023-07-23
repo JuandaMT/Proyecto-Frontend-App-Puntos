@@ -14,6 +14,9 @@
         />
         <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css" />
         <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet" />
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
@@ -59,10 +62,14 @@
             </div>
         </nav>
 
-        <main>
+        <main class="login-main">
+            <div class="logo-slogan">
+                <img src="media/appunto.svg" alt="Logo de APPunto" />
+                <p class="slogan">Pregunta, resuelve y appuntate!</p>
+            </div>
             <div class="login-card">
                 <div class="card-header">
-                    <h1>Inicio</h1>
+                    <h1>Inicia sesión</h1>
                 </div>
                 <div class="card-body">
                     <form>
@@ -74,9 +81,7 @@
                             <label for="password">Contraseña</label>
                             <input type="password" id="password" name="password" required="" />
                         </div>
-                        <div class="form-group">
-                            <button type="submit" class="login-button">Inicio</button>
-                        </div>
+                        <div class="form-group"><button type="submit" class="login-button">Inicio</button></div>
                         <div class="crearCuenta">
                             <p>¿No tienes cuenta? <a href="signup.html">Regístrate</a></p>
                         </div>
